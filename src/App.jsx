@@ -62,12 +62,24 @@ function App() {
 
   const track = tracks[current]
 
+  const artistSiteLink = (
+    <a className="artist-site-link" href="https://letons11mrty.github.io/artist-site">
+      ← ARTIST SITE
+    </a>
+  )
+
   if (tracks.length === 0) {
-    return <div className="loading">Loading...</div>
+    return (
+      <div className="loading">
+        {artistSiteLink}
+        Loading...
+      </div>
+    )
   }
 
   return (
     <div className="hero">
+      {artistSiteLink}
       <Backdrop tracks={tracks} current={current} />
       <ScrollRail
         count={tracks.length}
