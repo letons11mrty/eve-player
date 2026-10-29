@@ -63,7 +63,7 @@ function App() {
   const track = tracks[current]
 
   const artistSiteLink = (
-    <a className="artist-site-link" href="https://letons11mrty.github.io/artist-site">
+    <a className="artist-site-link" href="https://letons11mrty.github.io/artiste-site/">
       ← ARTIST SITE
     </a>
   )
