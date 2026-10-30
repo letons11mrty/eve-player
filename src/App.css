@@ -607,3 +607,9 @@ input[type=range] { accent-color: #e6e6e6; height: 16px; min-width: 0; cursor: p
   .detail-art { height: auto; }
   .detail-panel h2, .detail-panel dd { overflow-wrap: anywhere; }
 }
+.transport .play-btn { display: inline-flex; align-items: center; justify-content: center; padding: 0; line-height: 1; flex-shrink: 0; }
+.transport .play-btn svg { display: block; flex-shrink: 0; }
+@media (max-width: 700px) {
+  .player-bar .volume { display: none; }
+  .player-bar .now-playing { grid-column: 1 / -1; }
+}
